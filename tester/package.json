@@ -1,0 +1,15 @@
+{
+  "name": "api-tester",
+  "version": "1.0.0",
+  "description": "API tests for the Node.js application",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "dependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "pg": "^8.11.3"
+  }
+}

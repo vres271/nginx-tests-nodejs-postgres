@@ -1,0 +1,59 @@
+/* Основной стиль для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+    border-radius: 10px; /* Закругленные углы */
+    overflow: hidden; /* Скрываем выходящие за пределы элементы */
+}
+
+/* Стиль для заголовков таблицы */
+th {
+    background-color: #4CAF50; /* Зеленый цвет фона */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase; /* Заглавные буквы */
+    border-bottom: 2px solid #367c39; /* Темно-зеленая граница */
+}
+
+/* Стиль для ячеек таблицы */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Серая граница между строками */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+
+/* Стиль для строк таблицы */
+tr {
+    background-color: #f9f9f9; /* Светлый фон строк */
+}
+
+/* Стиль для строк при наведении */
+tr:hover {
+    background-color: #f1f1f1; /* Изменение фона при наведении */
+}
+
+/* Стиль для последней строки */
+tr:last-child td {
+    border-bottom: none; /* Убираем границу у последней строки */
+}
+
+/* Стиль для первой ячейки в строке */
+td:first-child {
+    font-weight: bold;
+    color: #4CAF50; /* Зеленый цвет текста */
+}
+
+/* Стиль для нечетных строк */
+tr:nth-child(odd) {
+    background-color: #f0f8ff; /* Голубой фон для нечетных строк */
+}
+
+/* Стиль для четных строк */
+tr:nth-child(even) {
+    background-color: #e6f7ff; /* Светло-голубой фон для четных строк */
+}
